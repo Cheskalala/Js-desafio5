@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eca75e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+
+}
+body::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/fondo.png) ;
+    opacity: 0.5;
+}
+
+h1 {
+    position: relative;
+    color: #000;
+    background: #eabb89;
+    border-radius: 15px;
+    padding: 10px;
+    border:solid 4px #431f07;
+    border-radius: 15px;
+    margin: 10% 0;
+}
+main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5% ;
+    gap: 20px;
+}
+.caja-input {
+    
+    gap: 10px;
+    display: flex;
+    flex-direction: crow;
+    width: 80%;
+    justify-content: center;
+    border:solid 4px #431f07;
+    border-radius: 15px;
+    align-items: center;
+    background: #eabb89;
+    padding: 40px;
+    
+}
+
+.input {
+    padding: 10px;
+    border:solid 4px #431f07;
+    border-radius: 15px;
+}
+.tarea-btn{
+    padding: 10px;
+    border:solid 4px #431f07;
+    border-radius: 15px;
+    background-color: #a77541;
+    font-weight: 600;
+}
+
+.contendor {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    border:solid 4px #431f07;
+    border-radius: 15px;
+    align-items: center;
+    background: #eabb89;
+    padding: 60px;
+}
+.tareas{
+    
+    width: 80%;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    background-color: #a77541;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 4px #431f07;
+    font-size:x-large;
+}
+.botones {
+    display: flex;
+    gap: 10px;
+}
+.borrar-btn {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(1px 1px 2px #000);
+}
+
+
+.tarea-completada {
+    background: #f5812e;
+    text-decoration: line-through;
+}
+.descripcion-tarea{
+    text-decoration: none;
+}
+
+.resumen {
+    margin-top: 20px;
+}
+footer{
+position: relative;
+    height: 200px;
+    background: #8a360b;
+    width: 100%;
+    color: #fff;
+}
+.cajafoot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    padding-left: 10%;
+}
+footer img{
+    width: 200px;
+}
+footer .contacto{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+footer .contacto h3{
+    font-weight: 600;
+}
+footer .contacto li{
+list-style: none;
+font-weight: 700;
+}
+
+footer .contacto li a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .us{
+width: 300px;
+color: #fff;
+}
