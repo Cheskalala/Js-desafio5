@@ -105,6 +105,7 @@ main{
     width: 30px;
     height: 30px;
     filter: drop-shadow(1px 1px 2px #000);
+    cursor: pointer;
 }
 
 

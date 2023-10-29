@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
             tareaElement.innerHTML = `
             
                 <span>ID: ${tarea.id}</span> <span class="descripcion-tarea">${tarea.nombre}</span>
-                <div class="botones">                
-                <button class="cambiar-btn" data-index="${index}">checkout</button>
+                <div class="botones">
+                <input type="checkbox" class="cambiar-checkbox form-check-input" data-index="${index}" ${tarea.completada ? 'checked' : ''}>                
+                
                 <img class="borrar-btn" data-index="${index}" src="./assets/img/borrar.png" alt="Borrar"> 
                 </div>
             `;
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Cambiar estado de tarea
     tareaList.addEventListener("click", function (event) {
-        if (event.target.classList.contains("cambiar-btn")) {
+        if (event.target.classList.contains("cambiar-checkbox")) {
             const index = event.target.getAttribute("data-index");
             tareas[index].completada = !tareas[index].completada;
             actualizarListaTareas();
@@ -69,4 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     actualizarListaTareas();
     actualizarResumen();
+
+    
+
 });
