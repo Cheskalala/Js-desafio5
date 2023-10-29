@@ -47,7 +47,7 @@ main{
     
     gap: 10px;
     display: flex;
-    flex-direction: crow;
+    flex-direction: row;
     width: 80%;
     justify-content: center;
     border:solid 4px #431f07;
@@ -157,4 +157,66 @@ footer .contacto li a {
 footer .us{
 width: 300px;
 color: #fff;
+}
+
+@media  screen and (max-width: 656px){
+
+
+    body{
+        height: 100%;
+    }
+    .caja-input{
+        flex-direction: column;
+    }
+    .contendor{
+        padding: 40px 0px;
+    }
+    .tarea {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        background-color: #a77541;
+        padding: 20px;
+        border-radius: 15px;
+        border: solid 4px #431f07;
+        font-size: medium;
+    }
+    .botones {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .borrar-btn {
+        width: 10px;
+        height: 10px;
+        filter: drop-shadow(1px 1px 0px #000);
+    }
+    .resumen {
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer{
+        height: 100%;
+        
+    }
+    .cajafoot{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        align-items: center;
+        padding-left: 10%;
+        text-align: center;
+        padding: 10px;
+    }
+    footer img{
+        width: 150px;
+        margin:0 ;
+    }
+    footer .contacto{
+        justify-content: center;
+        
+    }
+    footer .contacto  ul{
+        padding: 0;
+        }
 }
